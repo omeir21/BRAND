@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   ATLAS_EO GLOBAL STYLES - LUXURY DESIGN SYSTEM
+   ============================================ */
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg-off-white text-text-charcoal;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-bold tracking-luxury;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl leading-tight;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl leading-tight;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl leading-tight;
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl leading-tight;
+  }
+
+  h5,
+  h6 {
+    @apply text-xl md:text-2xl leading-tight;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+    color: inherit;
+  }
+
+  a:hover {
+    @apply text-navy-primary;
+  }
+
+  button {
+    @apply transition-all duration-300;
+    font-family: inherit;
+  }
+
+  img {
+    @apply h-auto w-full;
+  }
+
+  /* Form elements */
+  input,
+  textarea,
+  select {
+    @apply border border-gray-300 rounded-md px-4 py-2 transition-colors duration-300;
+    @apply focus:outline-none focus:border-navy-primary focus:ring-1 focus:ring-navy-primary;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-gray-400;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply px-6 py-3 font-medium tracking-wide transition-all duration-300;
+    @apply inline-flex items-center justify-center gap-2;
+    @apply cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-navy-primary text-white hover:bg-navy-dark;
+  }
+
+  .btn-secondary {
+    @apply border border-navy-primary text-navy-primary hover:bg-navy-primary hover:text-white;
+  }
+
+  .btn-gold {
+    @apply bg-gold-accent text-white hover:bg-gold-dark;
+  }
+
+  .btn-outline {
+    @apply border border-text-charcoal text-text-charcoal hover:bg-text-charcoal hover:text-white;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn:disabled {
+    @apply cursor-not-allowed opacity-50;
+  }
+
+  /* Luxury divider */
+  .divider {
+    @apply h-px bg-gold-accent opacity-30;
+  }
+
+  .divider-thick {
+    @apply h-1 bg-gold-accent opacity-20;
+  }
+
+  /* Sections */
+  .section {
+    @apply py-20 md:py-32;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg;
+  }
+
+  /* Grid layouts */
+  .grid-products {
+    @apply grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  .grid-collections {
+    @apply grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  /* Text utilities */
+  .text-luxury {
+    @apply font-serif text-3xl font-bold tracking-luxury uppercase;
+  }
+
+  .text-luxury-large {
+    @apply font-serif text-5xl font-bold tracking-luxury uppercase;
+  }
+
+  .text-muted {
+    @apply text-gray-600;
+  }
+
+  .text-small {
+    @apply text-xs text-gray-500 uppercase tracking-widest;
+  }
+
+  /* Links */
+  .link-nav {
+    @apply relative pb-1 transition-colors duration-300;
+  }
+
+  .link-nav::after {
+    content: "";
+    @apply absolute bottom-0 left-0 h-px w-0 bg-gold-accent transition-all duration-300;
+  }
+
+  .link-nav:hover::after {
+    @apply w-full;
+  }
+
+  /* Spacing helpers */
+  .spacing-section {
+    @apply space-y-8 md:space-y-12;
+  }
+
+  .spacing-tight {
+    @apply space-y-4;
+  }
+
+  .spacing-relaxed {
+    @apply space-y-8;
+  }
+
+  /* Container */
+  .container-luxury {
+    @apply mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Hero sections */
+  .hero {
+    @apply relative flex min-h-screen items-center justify-center overflow-hidden;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-center;
+  }
+
+  /* Image containers */
+  .image-container {
+    @apply bg-gray-100;
+  }
+
+  .image-container-square {
+    @apply aspect-square overflow-hidden;
+  }
+
+  .image-container-portrait {
+    @apply aspect-[3/4] overflow-hidden;
+  }
+
+  .image-container-landscape {
+    @apply aspect-video overflow-hidden;
+  }
+
+  /* Loading skeleton */
+  .skeleton {
+    @apply animate-pulse bg-gray-200;
+  }
+
+  /* Transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .transition-slow {
+    @apply transition-all duration-500 ease-out;
+  }
+}
+
+/* ============================================
+   LUXURY ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility classes for animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.6s ease-out;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.6s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.6s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+/* Hide/Show utilities */
+.hide-mobile {
+  @apply hidden md:block;
+}
+
+.show-mobile {
+  @apply block md:hidden;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    @apply hidden;
+  }
+}
+
+/* Accessibility */
+.sr-only {
+  @apply absolute h-1 w-1 -overflow-hidden -m-1 whitespace-nowrap border-0 p-0;
+}
+
+/* Remove default margins from common elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply m-0;
+}
+
+ul,
+ol {
+  @apply m-0 p-0;
+}
+
+li {
+  @apply list-none;
+}

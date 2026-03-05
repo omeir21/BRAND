@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg1772679425324" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1F3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg1772679425324)"/>
+  <rect width="1920" height="1080" fill="#F4F1EA" opacity="0.02"/>
+  <rect x="0" y="0" width="1920" height="2" fill="#C6A85B" opacity="0.5"/>
+  <text x="960" y="540" font-size="108" font-family="Georgia, serif" fill="#C6A85B" text-anchor="middle" font-weight="100" letter-spacing="2" dominant-baseline="middle">HERO</text>
+  <text x="1910" y="1075" font-size="8" font-family="sans-serif" fill="#C6A85B" text-anchor="end" opacity="0.3">Atlas</text>
+</svg>

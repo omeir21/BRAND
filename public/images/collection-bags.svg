@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg1772679425334" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1F3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg1772679425334)"/>
+  <rect width="600" height="400" fill="#F4F1EA" opacity="0.02"/>
+  <rect x="0" y="0" width="600" height="2" fill="#C6A85B" opacity="0.5"/>
+  <text x="300" y="200" font-size="40" font-family="Georgia, serif" fill="#C6A85B" text-anchor="middle" font-weight="100" letter-spacing="2" dominant-baseline="middle">BAGS</text>
+  <text x="590" y="395" font-size="8" font-family="sans-serif" fill="#C6A85B" text-anchor="end" opacity="0.3">Atlas</text>
+</svg>
